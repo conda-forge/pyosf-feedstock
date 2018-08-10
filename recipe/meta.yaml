@@ -1,6 +1,6 @@
 {% set name = "pyosf" %}
-{% set version = "1.0.4" %}
-{% set sha256 = "2c719f5c473784d27b5ba7aeb5f96dd37c377b1c0ccb1b8333f334fd2ce59d3c" %}
+{% set version = "1.0.5" %}
+{% set sha256 = "395408a3dc9c3db2b5c200b8722a13a60898c861633b99e6e250186adffd1370" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
