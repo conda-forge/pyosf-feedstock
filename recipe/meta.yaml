@@ -1,6 +1,6 @@
 {% set name = "pyosf" %}
-{% set version = "1.0.4" %}
-{% set sha256 = "2c719f5c473784d27b5ba7aeb5f96dd37c377b1c0ccb1b8333f334fd2ce59d3c" %}
+{% set version = "1.0.5" %}
+{% set sha256 = "76cea8fbecca11cbc4055f9d9342e3166c4c1db32cc8352d6dafa9b2a4d0fb2d" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}-{{sha256}}.zip
-  url: https://github.com/psychopy/pyosf/archive/{{version}}.zip
+  url: https://github.com/psychopy/pyosf/archive/v{{version}}.zip
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
